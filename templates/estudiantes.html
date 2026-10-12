@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes | Flask Ejemplo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor barra-navegacion">
+            <a class="logo" href="/">Flask Ejemplo</a>
+            <nav class="menu">
+                <a href="/">Inicio</a>
+                <a class="activo" href="/estudiantes">Estudiantes</a>
+                <a href="/contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor principal">
+        <section class="encabezado-pagina">
+            <h1>Lista de estudiantes</h1>
+            <p>Consulta los estudiantes registrados en esta vista de ejemplo.</p>
+        </section>
+
+        <section class="panel">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>N.º</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Carrera</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Estudiante 1</td>
+                        <td>Apellido 1</td>
+                        <td>Informática</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Estudiante 2</td>
+                        <td>Apellido 2</td>
+                        <td>Sistemas</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Estudiante 3</td>
+                        <td>Apellido 3</td>
+                        <td>Informática</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>Proyecto académico Flask | 2026</p>
+        </div>
+    </footer>
+</body>
+</html>

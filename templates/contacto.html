@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Flask Ejemplo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor barra-navegacion">
+            <a class="logo" href="/">Flask Ejemplo</a>
+            <nav class="menu">
+                <a href="/">Inicio</a>
+                <a href="/estudiantes">Estudiantes</a>
+                <a class="activo" href="/contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor principal">
+        <section class="encabezado-pagina">
+            <h1>Contacto</h1>
+            <p>Completa el siguiente formulario de demostración.</p>
+        </section>
+
+        <form class="formulario" action="/contacto" method="GET">
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu mensaje"
+                    required
+                ></textarea>
+            </div>
+
+            <button class="boton" type="submit">Enviar mensaje</button>
+        </form>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>Proyecto académico Flask | 2026</p>
+        </div>
+    </footer>
+</body>
+</html>

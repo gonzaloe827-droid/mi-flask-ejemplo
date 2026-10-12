@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Flask Ejemplo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="contenedor barra-navegacion">
+            <a class="logo" href="/">Flask Ejemplo</a>
+            <nav class="menu">
+                <a class="activo" href="/">Inicio</a>
+                <a href="/estudiantes">Estudiantes</a>
+                <a href="/contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor principal">
+        <section class="hero">
+            <h1>Bienvenido a mi aplicación Flask</h1>
+            <p>
+                Un proyecto web desarrollado con Python, Flask,
+                HTML y CSS para aprender a crear páginas dinámicas.
+            </p>
+            <a class="boton" href="/estudiantes">Ver estudiantes</a>
+        </section>
+
+        <section class="seccion">
+            <h2 class="titulo-seccion">Explora nuestra aplicación</h2>
+            <p class="descripcion">
+                Accede a las diferentes secciones del proyecto.
+            </p>
+
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <span class="icono-tarjeta">👨‍🎓</span>
+                    <h3>Estudiantes</h3>
+                    <p>Consulta la lista de estudiantes de ejemplo.</p>
+                    <a class="boton" href="/estudiantes">Ver lista</a>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="icono-tarjeta">✉️</span>
+                    <h3>Contacto</h3>
+                    <p>Visita nuestra página de contacto.</p>
+                    <a class="boton" href="/contacto">Contactar</a>
+                </article>
+
+                <article class="tarjeta">
+                    <span class="icono-tarjeta">💻</span>
+                    <h3>Proyecto Flask</h3>
+                    <p>Una práctica para conectar rutas y plantillas.</p>
+                    <a class="boton" href="/contacto">Conocer más</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            <p>Proyecto académico Flask | 2026</p>
+        </div>
+    </footer>
+</body>
+</html>
